@@ -80,7 +80,7 @@ static id _instance;
     result(self.initialLink);
   } else if ([@"removeInitialLink" isEqualToString:call.method]) {
     self.initialLink = nil;
-    result(true);
+    result(self.initialLink);
   } else {
     result(FlutterMethodNotImplemented);
   }
