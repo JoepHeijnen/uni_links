@@ -110,6 +110,7 @@ public class UniLinksPlugin
 
     @Override
     public void onMethodCall(@NonNull MethodCall call, @NonNull MethodChannel.Result result) {
+        System.out.println(call.method);
         if (call.method.equals("getInitialLink")) {
             result.success(initialLink);
         } else if (call.method.equals("getLatestLink")) {
